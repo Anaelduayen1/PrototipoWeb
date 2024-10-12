@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Reservas - Cafetería Delicia</title>
+</head>
+<body>
+    <header>
+        <h1>Cafetería Delicia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Reservas</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="personas">Número de Personas:</label>
+            <input type="number" id="personas" name="personas" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cafetería Delicia. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales.</p>
+    </footer>
+</body>
+</html>

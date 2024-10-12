@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería La Esquina - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cafetería La Esquina</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="detalle.html">Detalles del Producto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <div class="contact-image">
+                <img src="images/contact.jpg" alt="Contacto de la Cafetería" class="centered-image">
+            </div>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <p>En la Cafetería La Esquina, ofrecemos una amplia gama de servicios para que disfrutes de la mejor experiencia. Entre ellos, se incluyen:</p>
+            <!-- Lista no ordenada -->
+            <ul>
+                <li>Conexión Wi-Fi gratuita</li>
+                <li>Espacios para trabajar o estudiar</li>
+                <li>Descuentos para grupos</li>
+                <li>Música ambiente</li>
+            </ul>
+            <h3>Cómo hacer un pedido:</h3>
+            <p>Sigue estos sencillos pasos para hacer tu pedido:</p>
+            <!-- Lista ordenada -->
+            <ol>
+                <li>Elige tu bebida o postre favorito del <a href="menu.html">menú</a>.</li>
+                <li>Rellena el formulario de contacto con tu nombre y email.</li>
+                <li>Escribe tu pedido y cualquier indicación especial en el campo de mensaje.</li>
+                <li>Pulsa en "Enviar" y nos pondremos en contacto contigo.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cafetería La Esquina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

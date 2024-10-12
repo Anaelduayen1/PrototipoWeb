@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Cafetería Delicia</title>
+</head>
+<body>
+    <header>
+        <h1>Cafetería Delicia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <img src="images/banner.jpg" alt="Bienvenido a la Cafetería Delicia" class="banner-img">
+            <div class="banner-text">
+                <h2>Bienvenido a la Cafetería Delicia</h2>
+                <p>El mejor lugar para disfrutar de un café y un buen postre.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Destacados del Mes</h2>
+            <div class="destacados-grid">
+                <div class="destacados">
+                    <img src="images/cafe.jpg" alt="Café Especial" />
+                    <p>Café Especial</p>
+                </div>
+                <div class="destacados">
+                    <img src="images/postre.jpg" alt="Postre del Mes" />
+                    <p>Postre del Mes</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Testimonios de Clientes</h2>
+            <blockquote>
+                "¡El mejor café que he probado!" - Cliente Satisfecho
+            </blockquote>
+        </section>
+    </main>
+    <h2>Nuestros Servicios</h2>
+            <p>En la Cafetería La Esquina, ofrecemos una amplia gama de servicios para que disfrutes de la mejor experiencia. Entre ellos, se incluyen:</p>
+           
+            <ul>
+                <li>Conexión Wi-Fi gratuita</li>
+                <li>Espacios para trabajar o estudiar</li>
+                <li>Descuentos para grupos</li>
+                <li>Música ambiente</li>
+            </ul>
+            <h3>Cómo hacer un pedido:</h3>
+            <p>Sigue estos sencillos pasos para hacer tu pedido:</p>
+            <ol>
+                <li>Elige tu bebida o postre favorito del <a href="menu.html">menú</a>.</li>
+                <li>Rellena el formulario de contacto con tu nombre y email.</li>
+                <li>Escribe tu pedido y cualquier indicación especial en el campo de mensaje.</li>
+                <li>Pulsa en "Enviar" y nos pondremos en contacto contigo.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Formulario de Registro</h2>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="18" max="100" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="123456789" required><br>
+
+                <label for="sitio-web">Sitio Web:</label>
+                <input type="url" id="sitio-web" name="sitio-web" placeholder="https://example.com"><br>
+
+                
+                <fieldset>
+                    <legend>Género:</legend>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Intereses:</legend>
+                    <input type="checkbox" id="cafe" name="intereses" value="cafe">
+                    <label for="cafe">Café</label>
+                    <input type="checkbox" id="postres" name="intereses" value="postres">
+                    <label for="postres">Postres</label>
+                    <input type="checkbox" id="musica" name="intereses" value="musica">
+                    <label for="musica">Música</label>
+                </fieldset><br>
+
+                <label for="nacionalidad">Nacionalidad:</label>
+                <select id="nacionalidad" name="nacionalidad">
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="mexico">México</option>
+                    <option value="españa">España</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea><br>
+
+
+                <label for="satisfaccion">Nivel de Satisfacción:</label>
+                <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="10">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    <footer>
+        <p>&copy; 2024 Cafetería Delicia. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales.</p>
+    </footer>
+</body>
+</html>

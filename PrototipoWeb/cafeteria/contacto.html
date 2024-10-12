@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contacto - Cafetería Delicia</title>
+</head>
+<body>
+    <header>
+        <h1>Cafetería Delicia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos a través de los siguientes métodos:</p>
+        <p>Email: contacto@cafeteriadelicia.com</p>
+        <p>Teléfono: +34 912 345 678</p>
+        <p>Dirección: Calle de la Café, 123, Madrid</p>
+    </main>
+        <section>
+            <h2>Contacto</h2>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    <footer>
+        <p>&copy; 2024 Cafetería Delicia. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales.</p>
+    </footer>
+</body>
+</html>
